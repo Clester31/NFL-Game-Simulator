@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>NFL Game Simulator</title>
+</head>
+<body>
+    <section class="content">
+        <h1>NFL Game Simulator</h1>
+        <p>Select two teams and click on the SIMULATE button to begin the simulation</p>
+        <p>Offensive and deffensive team stats from 2022 season</p>
+        <select name="away-team" id="away-team">
+            <option value="ARZ">Arizona Cardinals</option>
+            <option value="ATL">Atlanta Falcons</option>
+            <option value="BAL">Baltimore Ravens</option>
+            <option value="BUF">Buffalo Bills</option>
+            <option value="CAR">Carolina Panthers</option>
+            <option value="CHI">Chicago Bears</option>
+            <option value="CIN">Cincinnati Bengals</option>
+            <option value="CLE">Cleveland Browns</option>
+            <option value="DAL">Dallas Cowboys</option>
+            <option value="DEN">Denver Broncos</option>
+            <option value="DET">Detroit Lions</option>
+            <option value="GB">Green Bay Packers</option>
+            <option value="HOU">Houston Texans</option>
+            <option value="IND">Indianapolis Colts</option>
+            <option value="JAX">Jacksonville Jaguars</option>
+            <option value="KC">Kansas City Chiefs</option>
+            <option value="LV">Las Vegas Raiders</option>
+            <option value="LAC">Los Angeles Chargers</option>
+            <option value="LAR">Los Angeles Rams</option>
+            <option value="MIA">Miami Dolphins</option>
+            <option value="MIN">Minnesota Vikings</option>
+            <option value="NE">New England Patriots</option>
+            <option value="NO">New Orleans Saints</option>
+            <option value="NYG">New York Giants</option>
+            <option value="NYJ">New York Jets</option>
+            <option value="PHI">Philadelphia Eagles</option>
+            <option value="PIT">Pittsburgh Steelers</option>
+            <option value="SF">San Francisco 49ers</option>
+            <option value="SEA">Seattle Seahawks</option>
+            <option value="TB">Tampa Bay Buccaneers</option>
+            <option value="TEN">Tennessee Titans</option>
+            <option value="WAS">Washington Commanders</option>
+        </select>
+        <select name="home-team" id="home-team">
+            <option value="ARZ">Arizona Cardinals</option>
+            <option value="ATL">Atlanta Falcons</option>
+            <option value="BAL">Baltimore Ravens</option>
+            <option value="BUF">Buffalo Bills</option>
+            <option value="CAR">Carolina Panthers</option>
+            <option value="CHI">Chicago Bears</option>
+            <option value="CIN">Cincinnati Bengals</option>
+            <option value="CLE">Cleveland Browns</option>
+            <option value="DAL">Dallas Cowboys</option>
+            <option value="DEN">Denver Broncos</option>
+            <option value="DET">Detroit Lions</option>
+            <option value="GB">Green Bay Packers</option>
+            <option value="HOU">Houston Texans</option>
+            <option value="IND">Indianapolis Colts</option>
+            <option value="JAX">Jacksonville Jaguars</option>
+            <option value="KC">Kansas City Chiefs</option>
+            <option value="LV">Las Vegas Raiders</option>
+            <option value="LAC">Los Angeles Chargers</option>
+            <option value="LAR">Los Angeles Rams</option>
+            <option value="MIA">Miami Dolphins</option>
+            <option value="MIN">Minnesota Vikings</option>
+            <option value="NE">New England Patriots</option>
+            <option value="NO">New Orleans Saints</option>
+            <option value="NYG">New York Giants</option>
+            <option value="NYJ">New York Jets</option>
+            <option value="PHI">Philadelphia Eagles</option>
+            <option value="PIT">Pittsburgh Steelers</option>
+            <option value="SF">San Francisco 49ers</option>
+            <option value="SEA">Seattle Seahawks</option>
+            <option value="TB">Tampa Bay Buccaneers</option>
+            <option value="TEN">Tennessee Titans</option>
+            <option value="WAS">Washington Commanders</option>
+        </select>
+        <div class="sim-btn">
+            <button>SIMULATE</button>
+        </div>
+        <div class="final-score">
+            <h2>FINAL SCORE</h2>
+            <h3><span id="away-score">0</span> - <span id="home-score">0</span><span id="OTlabel">OT</span></h3>
+        </div>
+        <div class="scoreboard">
+            <img src="#" alt="Away Team logo" id="away-logo">
+            <div class="scoreboard-text">
+                <h3 id="quarter-labels"><span>Q</span><span>1</span><span>2</span><span>3</span><span>4</span><span>OT</span></h3>
+                <h3><span id="away-label">AWAY</span><span id="aq1">0</span><span id="aq2">0</span><span id="aq3">0</span><span id="aq4">0</span><span id="aqOT">0</span></h3>
+                <h3><span id="home-label">HOME</span><span id="hq1">0</span><span id="hq2">0</span><span id="hq3">0</span><span id="hq4">0</span><span id="hqOT">0</span></h3>
+            </div>
+            <img src="#" alt="Away Team logo" id="home-logo">
+        </div>
+    </section>   
+    
+    <script src="app.js"></script>
+</body>
+</html>
